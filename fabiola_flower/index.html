@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        .up {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-color: #d81616;
+            border-radius: 0%;
+        }
+        
+        .up a {
+            color: white;
+            text-decoration: none;
+            background: #8BC34A;
+            padding: 4px 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            margin: 5px;
+        }
+        
+        footer {
+            background-color: #d81616;
+            font-size: 15px;
+        }
+        
+        iframe {
+            align-items: center;
+        }
+    </style>
+    <script>
+        var sentencia = "DELETE FROM `cart` WHERE 1";
+        $.ajax({
+            url: 'eliminar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.dir();
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div name="header" class="up">
+        <h1>LUCI FLOWERS</h1>
+        <a href="login.html">Login</a>
+        <a href="membership.html">MemberShip</a>
+    </div>
+    <h2>About us</h2>
+    <img src="mapa.jpg" width="350" height="250" align="left">
+    <p style="text-align: justify; font-style: normal; font-size: 0.9cm;">is a luxury florist specialising in the art of offering different types of flowers, with the aim of transmitting, through its varieties, boxes and arrangements, feelings and emotions of love, friendship, gratitude, celebration and condolences, in
+        order to give its customers and recipients a unique and incomparable experience.
+    </p>
+    <br>
+</body>
+<footer>
+    <h3>Contact Us</h3>
+    <p>Address: Street 45 No. 20-17. Bogota, Colombia</p>
+    <p>Phone: +57 3112768954</p>
+    <p><a href="mailto:flower-bogota@gmail.com">flower-bogota@gmail.com</a></p>
+</footer>
+
+</html>

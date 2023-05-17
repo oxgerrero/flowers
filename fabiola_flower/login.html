@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work</title>
+    <link rel="stylesheet" href="Estyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="caja1">
+        <form method="post" action="login.php">
+            <div class="formtlo">login</div>
+            <div class="ub1">&#128273; usser</div>
+            <input type="text" name="txtusuario">
+            <div class="ub1">&#128274; password</div>
+
+            <input type="password" name="txtpassword" id="txtpassword">
+
+            <div class="ub1">
+                <input type="checkbox" onclick="verpassword()">view pasword
+            </div>
+
+
+            <div align="center">
+                <input type="submit" value="login">
+
+            </div>
+        </form>
+        <div align="center">
+            <input type="submit" value="register" onclick="registrar()">
+        </div>
+    </div>
+</body>
+<script>
+    function verpassword() {
+        var tipo = document.getElementById("txtpassword");
+        if (tipo.type == "password") {
+            tipo.type = "text";
+        } else {
+            tipo.type = "password";
+        }
+    };
+
+    function registrar() {
+        alert('enter the values for the corresponding boxes');
+        var name = window.prompt("Name");
+        var email = window.prompt("email");
+        var condition = 1;
+        var usser = window.prompt("usser");
+        var pass = window.prompt("pass");
+        alert(name + '/' + email + '/' + usser + '/' + pass + '/' + condition);
+        //var sentencia = "INSERT INTO 'users' (name,email,usser,pass,condition) VALUES ('" + name + "','" + email + "','" + usser + "','" + pass + "','" + condition + "')";
+        var sentencia = "INSERT INTO `users`(`name`, `email`, `usser`, `pass`, `condition`) VALUES ('" + name + "','" + email + "','" + usser + "','" + pass + "','" + condition + "')";
+        //alert(sentencia);
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+</script>
+
+</html>

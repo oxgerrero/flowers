@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        .up {
+            text-align: center;
+            color: rgb(224, 15, 15);
+            background-color: #167ad8
+        }
+        
+        footer {
+            background-color: rgb(126, 200, 243);
+        }
+        
+        .products {
+            text-align: center;
+            background-color: rgb(140, 233, 240);
+            width: fit-content;
+            height: min-content;
+            margin: 1cm;
+            border-color: rgb(255, 255, 255);
+        }
+        
+        .namep {
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .imagep {
+            align-content: center;
+            border-color: rgb(0, 0, 0);
+            border-image: 0.2%;
+        }
+        
+        .shopp {
+            align-content: center;
+            border-color: rgb(88, 179, 240);
+            border-style: groove;
+            border-radius: 0.2%;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        button {
+            text-align: center;
+        }
+        
+        #div1 {
+            float: left;
+        }
+        
+        #div2 {
+            float: left;
+        }
+        
+        #div3 {
+            float: left;
+        }
+        
+        #div4 {
+            float: left;
+        }
+        
+        #div5 {
+            float: left;
+        }
+        
+        #div6 {
+            float: left;
+        }
+        
+        #div7 {
+            float: left;
+        }
+        
+        #div8 {
+            float: left;
+        }
+        
+        #div9 {
+            float: left;
+        }
+        
+        #divf,
+        #divf1,
+        #divf2 {
+            clear: both;
+        }
+        
+        .img-side {
+            background: #E7E7E9;
+            color: #000000;
+            width: 305px;
+            height: 305px;
+            margin-top: -315px;
+            opacity: 0;
+            -webkit-transition: all .5s ease-in-out;
+        }
+        
+        .img-side:hover {
+            opacity: .7
+        }
+    </style>
+
+</head>
+
+<body>
+    <div name="header" class="up">
+        <h1>LUCI FLOWERS</h1>
+        <img src="https://image.flaticon.com/icons/png/512/107/107831.png" width="20" height="20" onclick="cars()">
+    </div>
+
+    <div name="products">
+        <script>
+            var np1 = "The Ultimate Daisy";
+            var np2 = "Dozen Red Roses";
+            var np3 = "Bundles of Sweetness";
+            var np4 = "The Love Combo";
+            var np5 = "Timeless Romance";
+            var np6 = "Black and White";
+            var np7 = "Premium Rose Basket";
+            var np8 = "Golden Sunburst";
+            var np9 = "Fruits of the Romance";
+
+            var pp1 = "119900";
+            var pp2 = "89900";
+            var pp3 = "169900";
+            var pp4 = "159000";
+            var pp5 = "249900";
+            var pp6 = "339900";
+            var pp7 = "229900";
+            var pp8 = "139900";
+            var pp9 = "189900";
+
+            var ip1 = "img1.jpg";
+            var ip2 = "img2.jpg";
+            var ip3 = "img3.jpg";
+            var ip4 = "img4.jpg";
+            var ip5 = "img5.jpg";
+            var ip6 = "img6.jpg";
+            var ip7 = "img7.jpg";
+            var ip8 = "img8.jpg";
+            var ip9 = "img9.jpg";
+        </script>
+        <div name="product 1" class="products" id="div1">
+            <h3 class="namep">
+                <script>
+                    document.write(np1);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip1 + '" class="imagep" width="300" height="300">');
+            </script>
+            <br />
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Our fresh basket of daisies is a fine and versatile floral gift for multiple occasions. White, yellow and sunset-color gerbera daisies come with baby's breath and fresh greenery, perfect for thank-yous and tasteful business gifts! You can't help but bring
+                        a smile, decorate your home or make someone's day with a daisy basket. Send one today!
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp1);
+                </script>
+            </h3>
+            <button onclick="p1()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 2" class="products" id="div2">
+            <h3 class="namep">
+                <script>
+                    document.write(np2);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip2 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Nothing says “I love you” more than a dozen red roses. Tell your sweetheart you think of her all day with these sweet, tender blossoms, framed with fresh green foliage. Our dozen red roses are set off to perfection in an elegant glass vase and make the
+                        perfect romantic gift.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp2);
+                </script>
+            </h3>
+            <button onclick="p2()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 3" class="products" id="div3">
+            <h3 class="namep">
+                <script>
+                    document.write(np3);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip3 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Send bundles of sweetness with our gorgeous Valentine's Day combo. Your gift combines 18 gorgeous red roses in a classy vase, paired with luxury chocolates and an I Love You teddy bear. Combining sweet whimsy with natural beauty, the bear reminds her
+                        of your love long after the holiday has gone by.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp3);
+                </script>
+            </h3>
+            <button onclick="p3()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 4" class="products" id="div4">
+            <h3 class="namep">
+                <script>
+                    document.write(np4);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip4 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Surprise that special someone with this beautiful arrangement that contains: 18 red roses in a vase, a Brown Teddy Bear, and a Box of Chocolates Ferrero Rocher.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp4);
+                </script>
+            </h3>
+            <button onclick="p4()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 5" class="products" id="div5">
+            <h3 class="namep">
+                <script>
+                    document.write(np5);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip5 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Red roses with red wine is a traditional match worthy of an elegant couple. Classic Cabernet Sauvignon pairs beautifully with a steak or other red meat accompanied by a decadent creamy sauce. Indulge your loved one with a luxurious meal, setting a sophisticated
+                        table with this dazzling centerpiece of 28 red roses.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp5);
+                </script>
+            </h3>
+            <button onclick="p5()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 6" class="products" id="div6">
+            <h3 class="namep">
+                <script>
+                    document.write(np6);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip6 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Over one hundred sumptuously rich white roses form a majestic crown above our velvety black hatbox in the standout of our Luxury Collection.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp6);
+                </script>
+            </h3>
+            <button onclick="p6()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 7" class="products" id="div7">
+            <h3 class="namep">
+                <script>
+                    document.write(np7);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip7 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Roses are the perfect gift for all seasons. Our five dozen assorted roses are beautifully arranged in a traditional wicker basket with handle. Our Premium Rose Basket is a classic presentation for any occasion: anniversary, birthday, congratulations...or
+                        just because.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp7);
+                </script>
+            </h3>
+            <button onclick="p7()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 8" class="products" id="div8">
+            <h3 class="namep">
+                <script>
+                    document.write(np8);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip8 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        At the heart of our Golden Sunburst basket are three bright sunflowers, surrounded by orange gerbera daisies and lilies. Set off to perfection by a bed of greenery and goldenrod accents, this cheery arrangement is guaranteed to brighten up anybody's day.
+                        Send for a Get Well wish, to brighten up the blues, or just to let someone know you care.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp8);
+                </script>
+            </h3>
+            <button onclick="p8()" class="shopp">shop</button>
+        </div>
+
+        <div name="product 9" class="products" id="div9">
+            <h3 class="namep">
+                <script>
+                    document.write(np9);
+                </script>
+            </h3>
+            <script>
+                document.write('<img src="' + ip9 + '" class="imagep" width="300" height="300">');
+            </script>
+            <div class="img-side">
+                <br />
+                <center>
+                    <font face="arial" size="2" color="#000000">
+                        Celebrate exquisite romance with the Fruits of the Romance combination basket. Our lovingly crafted arrangement cleverly mixes stunning red roses with luscious fresh fruit. You'll find grapes, apples and more in the basket, crowned by tender roses. Set
+                        off to perfection with accent foliage, the basket makes a welcome Get Well gift too. <br> Contains two dozen roses and a fresh fruit selection.
+                    </font>
+                </center>
+            </div>
+            <h3>COP$
+                <script>
+                    document.write(pp9);
+                </script>
+            </h3>
+            <button onclick="p9()" class="shopp">shop</button>
+        </div>
+    </div>
+    <br>
+    <div id="divf"></div>
+
+</body>
+
+<footer>
+    <h3>Contact Us</h3>
+    <p>Address: Street 45 No. 20-17. Bogota, Colombia</p>
+    <p>Phone: +57 3112768954</p>
+    <p><a href="mailto:flower-bogota@gmail.com">flower-bogota@gmail.com</a></p>
+</footer>
+
+<script>
+    function p1() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np1 + "','" + ip1 + "','" + pp1 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+
+    function p2() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np2 + "','" + ip2 + "','" + pp2 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p3() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np3 + "','" + ip3 + "','" + pp3 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p4() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np4 + "','" + ip4 + "','" + pp4 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p5() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np5 + "','" + ip5 + "','" + pp5 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p6() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np6 + "','" + ip6 + "','" + pp6 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p7() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np7 + "','" + ip7 + "','" + pp7 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p8() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np8 + "','" + ip8 + "','" + pp8 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function p9() {
+        var sentencia = "INSERT INTO `cart`(`name`, `image`, `price`) VALUES ('" + np9 + "','" + ip9 + "','" + pp9 + "')";
+        $.ajax({
+            url: 'insertar.php',
+            type: 'post',
+            data: {
+                move: sentencia
+            },
+            success: function() {
+                console.log("created successfuly");
+            },
+            error: function(e) {
+                console.log(e);
+            }
+        })
+        location.reload();
+    };
+
+    function cars() {
+        window.location = "cars.php";
+    }
+</script>
+
+</html>
